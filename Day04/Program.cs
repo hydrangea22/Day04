@@ -6,29 +6,51 @@ namespace Day04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Hello World");
-
-            int a = 0;
-            int b = 0;
-
-            string input = Console.ReadLine();
-            a = int.Parse(input);
-
-            string input2 = Console.ReadLine();
-            b = int.Parse(input2);
-
-            Console.WriteLine(Add(a, b));
-
         }
+    }
 
-        static int Add(int a, int b)
+    class Car
+    {
+        Door[] doors;
+        Price price;
+        Engine engine;
+
+        void Drive()
         {
-            int c = 0;
-
-            c = a + b;
-
-            return c;
+            doors = new Door[2];
+            doors[0].Lock();
+            doors[1].Lock();
         }
+    }
+
+    class Door
+    {
+        int windowsCount = 2;
+
+        void Open()
+        {
+        }
+
+        void Close()
+        {
+        }
+
+        public void Lock()
+        {
+        }
+
+        void UnLock()
+        {
+        }
+    }
+
+    class Price
+    {
+
+    }
+
+    class Engine
+    {
+
     }
 }
